@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="magellanApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%= content_for?(:title) ? yield(:title) : "magellan" %></title>
+        <%= csrf_meta_tags %>
+        <%= stylesheet_link_tag "application", :media => "all" %>
+    </head>
+    <body>
+        <div class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">
+                        <h1><a href="/">Magellan!</a></h1>
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right user-panel-container">
+                        <li class="active">
+                            <div user-panel></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="primary">
+            <div ng-view></div>
+        </div>
+
+        
+
+        <div id="f" class="navbar navbar-fixed-bottom">
+            <div class="container">
+                <div class="row">
+                    <p>Crafted by António Pacheco</p>
+                </div>
+            </div>
+        </div>
+
+        <%= javascript_include_tag "application" %>
+    </body>
+</html>

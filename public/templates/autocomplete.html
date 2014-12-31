@@ -1,0 +1,17 @@
+    <label for="city">City</label>
+    <input type="text"
+        name="city"
+        ng-model="trip.city"
+        autocomplete="off"
+        placeholder="Location"
+        ng-keydown="keyPressed($event)"
+        ng-blur="blurred($event)"
+        required
+     />
+        <ul id="autolist" ng-show="reslist">
+            <li ng-repeat="res in reslist" ng-class="{'selected': currentIndex == res.id}" ng-click="setCity(res.city)" 
+            ng-mouseover="disableBlur(res.id)"
+            ng-mouseout="enableBlur()">
+                {{res.city}}
+            </li>
+        </ul>

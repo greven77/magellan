@@ -1,0 +1,19 @@
+== README
+
+This a demo app that was done in order to show some of my ruby and angularjs knowledge.
+In this app you can create a profile, create a list of places you visited and manage the list. It also displays a map visualization with markers on the places you visited.
+
+Includes:
+User registration and login
+Token authentication
+Third-party API usage (google places and google geocoding APIs) in order to get autocomplete data and to get map coordinates before creation (via rails model callback)
+Twitter Bootstrap
+Usage of third party libs as directives (D3.js)
+Communication between app and directives in order to update UI properly
+Custom made autocomplete directive (autofill directive)
+
+A demo can be seen at http://secure-hamlet-9710.herokuapp.com/
+NOTE: I don't know why but the app is kind of slow on github
+so please feel free to run locally if you want to see it in
+full performance, in that case just make sure you have rails 4, ruby2 and
+postgresql installed beforehand.

@@ -1,0 +1,28 @@
+ul#autolist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 350px;
+}
+
+li.selected {
+    outline: blue;
+    border: 1px dotted;
+}
+
+form.cityForm li:hover {
+    z-index: 999999;
+    background-color: yellow;
+}
+
+form.cityForm {
+    margin: 25px 0;
+}
+
+form.cityForm label {
+    min-width: 75px;
+}
+
+form.cityForm textarea {
+    min-width: 151px;
+}
